@@ -47,4 +47,23 @@ def returnn():
     except:
         messagebox.showinfo("Error","Can't fetch Book IDs")
 
+ issueSql = "delete from "+issueTable+" where bid = '"+bid+"'"
+  
+    print(bid in allBid)
+    print(status)
+    updateStatus = "update "+bookTable+" set status = 'avail' where bid = '"+bid+"'"
+    try:
+        if bid in allBid and status == True:
+            cur.execute(issueSql)
+            con.commit()
+            cur.execute(updateStatus)
+            con.commit()
+            messagebox.showinfo('Success',"Book Returned Successfully")
+        else:
+            allBid.clear()
+            messagebox.showinfo('Message',"Please check the book ID")
+            root.destroy()
+            return
+
+
 root.mainloop()
