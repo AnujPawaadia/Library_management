@@ -23,4 +23,14 @@ def View():
     Canvas1 = Canvas(root) 
     Canvas1.config(bg="#12a4d9")
     Canvas1.pack(expand=True,fill=BOTH)
+
+     headingFrame1 = Frame(root,bg="#FFBB00",bd=5)
+    headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
+        
+    headingLabel = Label(headingFrame1, text="View Books", bg='black', fg='white', font=('Courier',15))
+    headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
+    
+    labelFrame = Frame(root,bg='black')
+    labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
+    y = 0.25
     root.mainloop()
