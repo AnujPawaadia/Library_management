@@ -64,6 +64,13 @@ def returnn():
             messagebox.showinfo('Message',"Please check the book ID")
             root.destroy()
             return
+    except:
+        messagebox.showinfo("Search Error","The value entered is wrong, Try again")
+    
+    
+    allBid.clear()
+    root.destroy()
+
 
 
 root.mainloop()
