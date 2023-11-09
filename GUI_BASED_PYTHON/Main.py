@@ -138,3 +138,82 @@ def student_login():
             print("Invalid credentials")
 
     Button(login_window, text="Login", command=check_credentials).pack()
+
+def open_teacher_section(username):
+    teacher_section = Toplevel(root)
+    teacher_section.title(f"Welcome Teacher {username}")
+    teacher_section.geometry("800x600")
+
+    def view_books():
+        View()
+
+    def return_book():
+        returnBook()
+
+    def view_research_papers():
+        # Add code to view research papers here
+        pass
+
+    # Add a frame with light blue background
+    teacher_frame = Frame(teacher_section, bg="lightblue")
+    teacher_frame.place(relwidth=1, relheight=1)
+
+    btn_view_books = Button(teacher_frame, text="VIEW BOOK LIST", bg='black', fg='white', command=view_books)
+    btn_view_books.place(relx=0.28, rely=0.4, relwidth=0.45, relheight=0.1)
+
+    btn_return_book = Button(teacher_frame, text="RETURN BOOK", bg='black', fg='white', command=return_book)
+    btn_return_book.place(relx=0.28, rely=0.5, relwidth=0.45, relheight=0.1)
+
+    btn_view_papers = Button(teacher_frame, text="VIEW RESEARCH PAPERS", bg='black', fg='white', command=view_research_papers)
+    btn_view_papers.place(relx=0.28, rely=0.6, relwidth=0.45, relheight=0.1)
+
+    # Add any other widgets or functionalities specific to the teacher section
+
+    teacher_section.mainloop()
+
+def open_student_section(username):
+    student_section = Toplevel(root)
+    student_section.title(f"Welcome {username}")
+    student_section.geometry("800x600")
+
+    # Add a frame with green background
+    student_frame = Frame(student_section, bg="green")
+    student_frame.place(relwidth=1, relheight=1)
+
+    def view_books():
+        View()
+
+    def return_book():
+        returnBook()
+
+    btn_view_books = Button(student_frame, text="VIEW BOOK LIST", bg='black', fg='white', command=view_books)
+    btn_view_books.place(relx=0.28, rely=0.4, relwidth=0.45, relheight=0.1)
+
+    btn_return_book = Button(student_frame, text="RETURN BOOK", bg='black', fg='white', command=return_book)
+    btn_return_book.place(relx=0.28, rely=0.5, relwidth=0.45, relheight=0.1)
+
+    # Add any other widgets or functionalities specific to the student section
+
+    student_section.mainloop()
+
+# Create the main window
+root = Tk()
+root.title("User Selection")
+root.geometry("800x600")
+
+bg_image = Image.open("lib.jpg")
+bg_photo = ImageTk.PhotoImage(bg_image)
+
+bg_label = Label(root, image=bg_photo)
+bg_label.place(relwidth=1, relheight=1)
+
+admin_button = Button(root, text="Admin", command=admin_click, font=("Helvetica", 16))
+admin_button.place(relx=0.2, rely=0.5, anchor=CENTER)
+
+teacher_button = Button(root, text="Teacher", command=teacher_click, font=("Helvetica", 16))
+teacher_button.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+student_button = Button(root, text="Student", command=student_click, font=("Helvetica", 16))
+student_button.place(relx=0.8, rely=0.5, anchor=CENTER)
+
+root.mainloop()
