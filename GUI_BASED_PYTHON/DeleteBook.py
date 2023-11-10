@@ -3,27 +3,39 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 
-def bookRegister():
+# Add your own database name and password here to reflect in the code
+mypass = "root"
+mydatabase="db"
+
+con = pymysql.connect(host="localhost",user="root",password="1234",database=mydatabase)
+cur = con.cursor()
+
+# Enter Table Names here
+issueTable = "books_issued" 
+bookTable = "books" #Book Table
+
+
+def deleteBook():
     
     bid = bookInfo1.get()
-    title = bookInfo2.get()
-    author = bookInfo3.get()
-    status = bookInfo4.get()
-    status = status.lower()
     
-    insertBooks = "insert into "+bookTable+" values('"+bid+"','"+title+"','"+author+"','"+status+"')"
+    deleteSql = "delete from "+bookTable+" where bid = '"+bid+"'"
+    deleteIssue = "delete from "+issueTable+" where bid = '"+bid+"'"
     try:
-        cur.execute(insertBooks)
+        cur.execute(deleteSql)
         con.commit()
-        messagebox.showinfo('Success',"Book added successfully")
+        cur.execute(deleteIssue)
+        con.commit()
+        messagebox.showinfo('Success',"Book Record Deleted Successfully")
     except:
-        messagebox.showinfo("Error","Can't add data into Database")
+        messagebox.showinfo("Please check Book ID")
+    
 
     print(bid)
 
     bookInfo1.delete(0, END)
     root.destroy()
-
+    
 def delete(): 
     
     global bookInfo1,bookInfo2,bookInfo3,bookInfo4,Canvas1,con,cur,bookTable,root
@@ -42,25 +54,24 @@ def delete():
     headingFrame1 = Frame(root,bg="#FFBB00",bd=5)
     headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
         
-    headingLabel = Label(headingFrame1, text="Delete Book", bg='black', fg='white', font=('Courier',15))
+    headingLabel = Label(headingFrame1, text="DELETE BOOK", bg='black', fg='white', font=('Courier', 20, 'bold'))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')
     labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)   
-
-
-    # Book ID to Delete
-   7 lb2 = Label(labelFrame,text="BOOK ID : ", bg='black', fg='white')
-    8lb2.place(relx=0.05,rely=0.5)
         
-  9  bookInfo1 = Entry(labelFrame)
+    # Book ID to Delete
+    lb2 = Label(labelFrame,text="BOOK ID : ", bg='black', fg='white')
+    lb2.place(relx=0.05,rely=0.5)
+        
+    bookInfo1 = Entry(labelFrame)
     bookInfo1.place(relx=0.3,rely=0.5, relwidth=0.62)
     
     #Submit Button
-   0 SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=deleteBook)
+    SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=deleteBook)
     SubmitBtn.place(relx=0.28,rely=0.9, relwidth=0.18,relheight=0.08)
     
     quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy)
     quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
     
-    root.mainloop()
+    root.mainloop() ye code delete book bale section me dal de purana hata kar
