@@ -46,8 +46,9 @@ def returnn():
             messagebox.showinfo("Error","Book ID not present")
     except:
         messagebox.showinfo("Error","Can't fetch Book IDs")
-
- issueSql = "delete from "+issueTable+" where bid = '"+bid+"'"
+    
+    
+    issueSql = "delete from "+issueTable+" where bid = '"+bid+"'"
   
     print(bid in allBid)
     print(status)
@@ -70,7 +71,7 @@ def returnn():
     
     allBid.clear()
     root.destroy()
-
+    
 def returnBook(): 
     
     global bookInfo1,SubmitBtn,quitBtn,Canvas1,con,cur,root,labelFrame, lb1
@@ -93,12 +94,12 @@ def returnBook():
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')
-    labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
-    
+    labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)   
+        
     # Book ID to Delete
     lb1 = Label(labelFrame,text="Book ID : ", bg='black', fg='white')
     lb1.place(relx=0.05,rely=0.5)
-        
+
     bookInfo1 = Entry(labelFrame)
     bookInfo1.place(relx=0.3,rely=0.5, relwidth=0.62)
     
@@ -109,8 +110,4 @@ def returnBook():
     quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy)
     quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
     
-
-
-
-
-root.mainloop()
+    root.mainloop()
