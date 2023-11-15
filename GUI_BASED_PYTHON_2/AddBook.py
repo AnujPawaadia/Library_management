@@ -59,6 +59,41 @@ def addBook():
 
 
     labelFrame = Frame(root,bg='black')
-    labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4
+    labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4)
+        
+    # Book ID
+    lb1 = Label(labelFrame,text="BOOK ID : ", bg='black', fg='white')
+    lb1.place(relx=0.05,rely=0.2, relheight=0.08)
+        
+    bookInfo1 = Entry(labelFrame)
+    bookInfo1.place(relx=0.3,rely=0.2, relwidth=0.62, relheight=0.08)
+        
+    # Title
+    lb2 = Label(labelFrame,text="BOOK NAME : ", bg='black', fg='white')
+    lb2.place(relx=0.05,rely=0.35, relheight=0.08)
+        
+    bookInfo2 = Entry(labelFrame)
+    bookInfo2.place(relx=0.3,rely=0.35, relwidth=0.62, relheight=0.08)
+        
+    # Book Author
+    lb3 = Label(labelFrame,text="AUTHOR : ", bg='black', fg='white')
+    lb3.place(relx=0.05,rely=0.50, relheight=0.08)
+        
+    bookInfo3 = Entry(labelFrame)
+    bookInfo3.place(relx=0.3,rely=0.50, relwidth=0.62, relheight=0.08)
+        
+    # Book Status
+    lb4 = Label(labelFrame,text="STATUS(AVAIL) : ", bg='black', fg='white')
+    lb4.place(relx=0.05,rely=0.65, relheight=0.08)
+        
+    bookInfo4 = Entry(labelFrame)
+    bookInfo4.place(relx=0.3,rely=0.65, relwidth=0.62, relheight=0.08)
+        
+    #Submit Button
+    SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=bookRegister)
+    SubmitBtn.place(relx=0.28,rely=0.9, relwidth=0.18,relheight=0.08)
+    
+    quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy)
+    quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
     
     root.mainloop()
