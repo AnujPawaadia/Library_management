@@ -74,4 +74,4 @@ def delete():
     quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy)
     quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
     
-    root.mainloop() ye code delete book bale section me dal de purana hata kar
+    root.mainloop()
