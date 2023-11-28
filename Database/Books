@@ -302,3 +302,104 @@ Book ID   |   Book Title                |   Author Name
 298       |   The Communist Manifesto      |   Karl Marx and Friedrich Engels
 299       |   The Wealth of Nations        |   Adam Smith
 300       |   The Interpretation of Dreams  |   Sigmund Freud
+301       |   The Odyssey                  |   Homer
+302       |   The Divine Comedy             |   Dante Alighieri
+303       |   The Art of War               |   Sun Tzu
+304       |   The Prince                   |   Niccolò Machiavelli
+305       |   The Republic                 |   Plato
+306       |   The Federalist Papers        |   Alexander Hamilton, James Madison, John Jay
+307       |   Common Sense                 |   Thomas Paine
+308       |   The Communist Manifesto      |   Karl Marx and Friedrich Engels
+309       |   The Wealth of Nations        |   Adam Smith
+310       |   The Interpretation of Dreams  |   Sigmund Freud
+311       |   The Odyssey                  |   Homer
+312       |   The Divine Comedy             |   Dante Alighieri
+313       |   The Art of War               |   Sun Tzu
+314       |   The Prince                   |   Niccolò Machiavelli
+315       |   The Republic                 |   Plato
+316       |   The Federalist Papers        |   Alexander Hamilton, James Madison, John Jay
+317       |   Common Sense                 |   Thomas Paine
+318       |   The Communist Manifesto      |   Karl Marx and Friedrich Engels
+319       |   The Wealth of Nations        |   Adam Smith
+320       |   The Interpretation of Dreams  |   Sigmund Freud
+321       |   The Odyssey                  |   Homer
+322       |   The Divine Comedy             |   Dante Alighieri
+323       |   The Art of War               |   Sun Tzu
+324       |   The Prince                   |   Niccolò Machiavelli
+325       |   The Republic                 |   Plato
+326       |   The Federalist Papers        |   Alexander Hamilton, James Madison, John Jay
+327       |   Common Sense                 |   Thomas Paine
+328       |   "Cosmos: A Personal Voyage"                               |   Carl Sagan
+329       |   "A Brief History of Time"                                 |   Stephen Hawking
+330       |   "The Selfish Gene"                                         |   Richard Dawkins
+331       |   "Sapiens: A Brief History of Humankind"                   |   Yuval Noah Harari
+332       |   "The Elegant Universe"                                    |   Brian Greene
+333       |   "The Double Helix"                                        |   James D. Watson
+334       |   "The Immortal Life of Henrietta Lacks"                    |   Rebecca Skloot
+335       |   "Astrophysics for Young People in a Hurry"                |   Neil deGrasse Tyson
+336       |   "The Sixth Extinction: An Unnatural History"              |   Elizabeth Kolbert
+337       |   "The Emperor of All Maladies: A Biography of Cancer"      |   Siddhartha Mukherjee
+338       |   "A Short History of Nearly Everything"                    |   Bill Bryson
+339       |   "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography"  |   Simon Singh
+340       |   "The Gene: An Intimate History"                           |   Siddhartha Mukherjee
+341       |   "The Fabric of the Cosmos"                                |   Brian Greene
+342       |   "The Making of the Atomic Bomb"                           |   Richard Rhodes
+343       |   "The Structure of Scientific Revolutions"                 |   Thomas S. Kuhn
+344       |   "The Feynman Lectures on Physics"                         |   Richard P. Feynman
+345       |   "The Man Who Knew Infinity"                               |   Robert Kanigel
+346       |   "The Quantum Universe: Everything That Can Happen Does Happen"  |   Brian Cox
+347       |   "The Singularity Is Near: When Humans Transcend Biology"  |   Ray Kurzweil
+348       |   "Lab Girl"                                                |   Hope Jahren
+349       |   "Einstein: His Life and Universe"                         |   Walter Isaacson
+350       |   "The Hidden Life of Trees: What They Feel, How They Communicate – Discoveries from a Secret World"                                                                       |   Peter Wohlleben
+350 | "The Yoga Bible"                     | Christina Brown
+351 | "Radical Acceptance"                 | Tara Brach
+352 | "The Power of Vulnerability"          | Brené Brown
+353 | "A Return to Love"                    | Marianne Williamson
+354 | "The Heart of the Buddha's Teaching"  | Thich Nhat Hanh
+355 | "A Course in Miracles"                | Helen Schucman
+356 | "The Power of Intention"              | Wayne Dyer
+357 | "The Seat of the Soul"                | Gary Zukav
+358 | "The Journey Within"                  | Radhanath Swami
+359 | "The Book of Awakening"               | Mark Nepo
+360 | "The Wisdom of No Escape"             | Pema Chödrön
+361 | "The Tibetan Book of Living and Dying"| Sogyal Rinpoche
+362 | "The Fifth Agreement"                 | Don Miguel Ruiz and Don Jose Ruiz
+363 | "The Disappearance of the Universe"   | Gary R. Renard
+364 | "The Soul's Code"                     | James Hillman
+365 | "The Diamond Cutter"                  | Geshe Michael Roach
+366 | "The Essential Rumi"                  | translated by Coleman Barks
+367 | "The Secret Teachings of All Ages"    | Manly P. Hall
+368 | "The Tao of Physics"                  | Fritjof Capra
+369 | "The Seven Storey Mountain"           | Thomas Merton
+370 | "The Inner Voice of Love"             | Henri J.M. Nouwen
+371 | "The Tibetan Book of the Dead"        | translated by Robert A.F. Thurman
+372 | "The Law of Divine Compensation"       | Marianne Williamson
+373 | "The Power of Silence"                | Carlos Castaneda
+374 | "The Soul of Money"                   | Lynne Twist
+375 | "The Tao of Pooh"                     | Benjamin Hoff
+376 | "The Miracle Morning"                 | Hal Elrod
+377 | "The Heartfulness Way"                | Kamlesh D. Patel and Joshua Pollock
+378 | "The Seat of the Soul"                | Gary Zukav
+379 | "The Untethered Soul"                 | Michael A. Singer
+380 | "The Wisdom of Insecurity"            | Alan Watts
+381 | "The Way of Zen"                      | Alan Watts
+382 | "The Book on the Taboo Against Knowing Who You Are" | Alan Watts
+383 | "The Art of Communicating"            | Thich Nhat Hanh
+384 | "The Miracle of Mindfulness"          | Thich Nhat Hanh
+385 | "The Zen Teachings of Master Lin-Chi" | translated by Thomas Cleary
+386 | "The Science of Mind"                 | Ernest Holmes
+387 | "The Mystic Path to Cosmic Power"     | Vernon Howard
+388 | "The Hero with a Thousand Faces"      | Joseph Campbell
+389 | "The Power of Now"                    | Eckhart Tolle
+390 | "A New Earth"                         | Eckhart Tolle
+391 | "Stillness Speaks"                    | Eckhart Tolle
+392 | "The Art of Living"                   | Thich Nhat Hanh
+393 | "The Art of Happiness"                | Dalai Lama and Howard Cutler
+394 | "The Wisdom of Yoga"                  | Stephen Cope
+395 | "The Yoga Sutras of Patanjali"        | Swami Satchidananda
+396 | "The Bhagavad Gita"                   | translated by Eknath Easwaran
+397 | "The Upanishads"                      | translated by Eknath Easwaran
+398 | "The Tao Te Ching"                    | translated by Stephen Mitchell
+399 | "The Dhammapada"                      | translated by Eknath Easwaran
+400 | "The Prophet"                         | Kahlil Gibran
