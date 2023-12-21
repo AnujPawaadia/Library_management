@@ -1,5 +1,5 @@
 
-Library Management System
+**Library Management System**
 Introduction
 Welcome to the Library Management System project! This project is designed to efficiently manage libraries of various sizes, ranging from small libraries to medium and large-level libraries. The system consists of three graphical user interfaces (GUIs) to cater to different library sizes and needs.
 
